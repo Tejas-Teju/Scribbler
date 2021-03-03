@@ -2,6 +2,13 @@ html,body {
     margin: 0;
 }
 
+body {
+    background-image: url('/images/background.jpg');
+    background-position: 0 12%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .logo-button-header {
     padding: 0.5em;
     display: flex;
@@ -10,7 +17,7 @@ html,body {
 
 .heading {
     font-family: 'Montez', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0;
     color: blue;
     text-decoration: none;
@@ -23,19 +30,11 @@ html,body {
     font-weight: lighter;
 }
 
-.buttons {
-    outline: none;
-    margin: 0;
+.btn {
     margin-left: 0.5em;
-    padding: 0.5em 1em;
-    border-radius: 0;
-    border: none;
-    box-shadow: 1px 1px grey;
-    background-color: blue;
-    color: white;
 }
 
-.buttons:active {
+.btn:active {
     transform: translateY(2px);
 }
 
