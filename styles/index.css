@@ -1,0 +1,9 @@
+.flex-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-buttons {
+    margin: auto;
+}

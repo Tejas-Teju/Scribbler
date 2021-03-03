@@ -1,10 +1,11 @@
 html,body {
+    height: 100%;
     margin: 0;
 }
 
 body {
     background-image: url('/images/background.jpg');
-    background-position: 0 12%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -80,6 +81,6 @@ body {
     text-align: center;
 }
 
-.footer-signup:hover {
+a:hover {
     text-decoration: none;
 }
