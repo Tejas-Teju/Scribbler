@@ -1,0 +1,29 @@
+/* All posts and Create posts button */
+.flex-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-buttons {
+    margin: auto;
+}
+
+/* Create post modal */
+.modal-createpost {
+    max-width: none;
+    width: 90%;
+}
+
+.post-form {
+    margin-top: 1em;;
+}
+
+.create-btn-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.create-btn {
+    margin: 1em 0 0.5em 0;
+}

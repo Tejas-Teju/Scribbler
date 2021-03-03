@@ -1,0 +1,86 @@
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header includes logo, subheading, SignUp and SignIn buttons */
+.logo-button-header {
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    font-family: 'Montez', cursive;
+    font-size: 2.5em;
+    margin: 0;
+    color: blue;
+    text-decoration: none;
+}
+
+.subheading {
+    font-family: 'Ubuntu+Mono', monospace;
+    font-size: 1em;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.btn {
+    margin-left: 0.5em;
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+
+/* Sign Up modal */
+.modal-dialog-centered {
+    width: 30%;
+}
+
+.modal-content {
+    padding: 1.5em;
+}
+
+.modal-header, .modal-body {
+    padding: 0;
+}
+
+.modal-title {
+    margin-bottom: 0.5em;
+}
+
+.modal-body {
+    margin-bottom: 0;
+}
+
+.signup-form, .signin-form {
+    margin-top: 1em;;
+}
+
+.form-control {
+    background-color: rgb(238, 237, 237);
+    opacity: 0.75;
+}
+
+.signup-btn, .signin-btn {
+    margin: 1em 0 0.5em 0;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
