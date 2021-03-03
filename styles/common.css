@@ -71,7 +71,7 @@ body {
     opacity: 0.75;
 }
 
-.signup-btn {
+.signup-btn, .signin-btn {
     margin: 1em 0 0.5em 0;
     width: 100%;
 }

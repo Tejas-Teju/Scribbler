@@ -64,7 +64,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="GetStartedTitle">Welcome Back!</h5>
+                            <h5 class="modal-title" id="WelcomeBackTitle">Welcome Back!</h5>
                             <button type="button" class="close" data-dismiss="modal">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -79,10 +79,10 @@
                                     <label for="InputPassword">Password</label>
                                     <input id="InputPassword" class="form-control" type="password" placeholder="Enter your password" required>
                                 </div>
-                                <button type="submit" class="btn btn-success signup-btn"><strong>Sign In</strong></button>
+                                <button type="submit" class="btn btn-success signin-btn"><strong>Sign In</strong></button>
                             </form>
                             <div class="footer">
-                                <strong><span>Not a member?</span><a class="footer-signup" href="#" data-toggle="modal" data-target="#SignUpModalCenter" data-dismiss="modal"> Sign Up</a></strong>
+                                <strong><span>Not a member?</span><a class="footer-signin" href="#" data-toggle="modal" data-target="#SignUpModalCenter" data-dismiss="modal"> Sign Up</a></strong>
                             </div>
                         </div>
                     </div>
@@ -92,8 +92,37 @@
     
         <div class="flex-buttons">
             <a class="btn btn-warning" href="bloglist.html" role="button">All Posts</a>
-            <button type="button" class="btn btn-warning">Create Post</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#CreatePostModalCenter">Create Post</button>
         </div>
+
+        <div class="modal fade" id="CreatePostModalCenter" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-createpost">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="PostTitle">Pen Your Post</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="signin-form">
+                            <div class="form-group">
+                                <label for="InputTitle">Title</label>
+                                <input id="InputTitle" class="form-control" type="text" placeholder="Enter title of your post" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="postTextarea">Contents</label>
+                                <textarea class="form-control" id="postTextarea" rows="12" placeholder="Enter the contents of your post" required></textarea>
+                            </div>
+                            <div class="create-btn-wrapper">
+                                <button type="submit" class="btn btn-success create-btn"><strong>Create</strong></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
