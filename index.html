@@ -17,7 +17,7 @@
         <div class="header-buttons">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SignUpModalCenter">Sign Up</button>
-            <button type="button" class="btn btn-primary">Sign In</button>    
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SignInModalCenter">Sign In</button>    
         </div>
     </header>
 
@@ -49,8 +49,38 @@
                             <label for="InputConfirmPassword">Confirm Password</label>
                             <input id="InputConfirmPassword" class="form-control" type="password" placeholder="Re-enter your password" required>
                         </div>
-                        <button type="submit" class="btn btn-success signup-btn">Sign Up</button>
+                        <button type="submit" class="btn btn-success signup-btn"><strong>Sign Up</strong></button>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SignIn modal -->
+    <div class="modal fade" id="SignInModalCenter" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="GetStartedTitle">Welcome Back!</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="signin-form">
+                        <div class="form-group">
+                            <label for="InputUsername">Username</label>
+                            <input id="InputUsername" class="form-control" type="text" placeholder="Enter your username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword">Password</label>
+                            <input id="InputPassword" class="form-control" type="password" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success signup-btn"><strong>Sign In</strong></button>
+                    </form>
+                    <div class="footer">
+                        <strong><span>Not a member?</span><a class="footer-signup" href="#" data-toggle="modal" data-target="#SignUpModalCenter" data-dismiss="modal"> Sign Up</a></strong>
+                    </div>
                 </div>
             </div>
         </div>
