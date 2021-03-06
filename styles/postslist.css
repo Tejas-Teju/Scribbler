@@ -1,12 +1,15 @@
+/*Generalising height and margin*/
 html, body {
     height: 100%;
     margin: 0;
 }
 
+/*background for the whole page*/
 body {
     background-color: #ffeedd;
 }
 
+/* Post container as flex*/
 .posts-container {
     margin: 2%;
     display: flex;
@@ -16,6 +19,7 @@ body {
     flex-wrap: wrap;
 }
 
+/*styling for posts*/
 .posts {
     margin: 1%;
     width: 37%;
@@ -87,4 +91,29 @@ body {
 
 .fa-trash, .fa-ellipsis-h:hover {
     cursor: pointer;
+}
+
+a, a:hover {
+    color: black;
+}
+
+/* Styling for Delete modal*/
+.modal-content {
+    width: unset;
+    padding: 1.5em;
+}
+
+.modal-dialog-centered {
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-yes, .btn-no {
+    margin-left: 0;
+    width: 20%;
 }
