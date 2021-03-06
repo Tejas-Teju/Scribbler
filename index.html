@@ -21,6 +21,7 @@
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SignUpModalCenter">Sign Up</button>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SignInModalCenter">Sign In</button>    
+                    <!-- End of Button trigger modal -->
                 </div>
             </header>
     
@@ -37,20 +38,20 @@
                         <div class="modal-body">
                             <form class="signup-form">
                                 <div class="form-group">
-                                    <label for="InputName">Name</label>
-                                    <input id="InputName" class="form-control" type="text" placeholder="Enter your name" required>
+                                    <label for="SignupName">Name</label>
+                                    <input id="SignupName" class="form-control" type="text" placeholder="Enter your name" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="InputUsername">Username</label>
-                                    <input id="InputUsername" class="form-control" type="text" placeholder="Enter your username" required>
+                                    <label for="SignupUsername">Username</label>
+                                    <input id="SignupUsername" class="form-control" type="text" placeholder="Enter your username" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="InputPassword">Password</label>
-                                    <input id="InputPassword" class="form-control" type="password" placeholder="Enter your password" required>
+                                    <label for="SignupPassword">Password</label>
+                                    <input id="SignupPassword" class="form-control" type="password" placeholder="Enter your password" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="InputConfirmPassword">Confirm Password</label>
-                                    <input id="InputConfirmPassword" class="form-control" type="password" placeholder="Re-enter your password" required>
+                                    <label for="SignupConfirmPassword">Confirm Password</label>
+                                    <input id="SignupConfirmPassword" class="form-control" type="password" placeholder="Re-enter your password" required>
                                 </div>
                                 <button type="submit" class="btn btn-success signup-btn"><strong>Sign Up</strong></button>
                             </form>
@@ -58,6 +59,7 @@
                     </div>
                 </div>
             </div>
+            <!-- End of SignUp modal -->
     
             <!-- SignIn modal -->
             <div class="modal fade" id="SignInModalCenter" tabindex="-1" role="dialog">
@@ -72,12 +74,12 @@
                         <div class="modal-body">
                             <form class="signin-form">
                                 <div class="form-group">
-                                    <label for="InputUsername">Username</label>
-                                    <input id="InputUsername" class="form-control" type="text" placeholder="Enter your username" required>
+                                    <label for="signinUsername">Username</label>
+                                    <input id="signinUsername" class="form-control" type="text" placeholder="Enter your username" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="InputPassword">Password</label>
-                                    <input id="InputPassword" class="form-control" type="password" placeholder="Enter your password" required>
+                                    <label for="signinPassword">Password</label>
+                                    <input id="signinPassword" class="form-control" type="password" placeholder="Enter your password" required>
                                 </div>
                                 <button type="submit" class="btn btn-success signin-btn"><strong>Sign In</strong></button>
                             </form>
@@ -89,12 +91,15 @@
                 </div>
             </div>
         </div>
-    
+        <!-- End of SignIn modal -->
+        
+        <!-- All posts and Create post buttons -->
         <div class="flex-buttons">
-            <a class="btn btn-warning" href="bloglist.html" role="button">All Posts</a>
+            <a class="btn btn-warning" href="/html/postslist.html" role="button">All Posts</a>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#CreatePostModalCenter">Create Post</button>
         </div>
 
+        <!-- Create Post modal (on click of Create Post button)-->
         <div class="modal fade" id="CreatePostModalCenter" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-centered modal-createpost">
                 <div class="modal-content">
@@ -122,8 +127,11 @@
                 </div>
             </div>
         </div>
+        <!-- End of Create Post modal -->
         
     </div>
+
+    <!-- Scripts that support bootstrap-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
