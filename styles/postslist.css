@@ -18,7 +18,7 @@ body {
 
 .posts {
     margin: 1%;
-    width: 40%;
+    width: 37%;
     display: flex;
     flex-direction: row;
     background-color: #ffffff;
@@ -44,25 +44,47 @@ body {
     background-color: #f2f2f2;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    padding: 10px 20px 0 15px;
+
+}
+
+.post-heading-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .post-heading, .post-content {
-    padding-left: 20px;
+    margin: 0;
+}
+
+.post-heading-wrapper, .post-content {
+    margin-bottom: 10px;
 }
 
 .post-heading {
-    padding-top: 10px;
-    margin-bottom: 5px;
     font-size: large;
     font-weight: bold;
-    width: 81%;
-    opacity: 0.4;
 } 
 
 .post-content {
-    width: 95%;
     line-height: 1em;
     -webkit-line-clamp: 3;
     height: 3em;
     overflow: hidden;
+}
+
+.post-body span {
+    display: block;
+    width: inherit;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.post-heading, .fa-trash, .fa-ellipsis-h {
+    opacity: 0.4;
+}
+
+.fa-trash, .fa-ellipsis-h:hover {
+    cursor: pointer;
 }
