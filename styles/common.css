@@ -1,15 +1,3 @@
-html,body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    background-image: url('/images/background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* Header includes logo, subheading, SignUp and SignIn buttons */
 .logo-button-header {
     padding: 0.5em;

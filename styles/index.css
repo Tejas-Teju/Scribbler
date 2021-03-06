@@ -1,3 +1,17 @@
+/* Common stlying to html page */
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* end of Common stlying to html page */
+
 /* All posts and Create posts button */
 .flex-wrapper {
     height: 100%;
@@ -8,6 +22,7 @@
 .flex-buttons {
     margin: auto;
 }
+/* End of All posts and Create posts button */
 
 /* Create post modal */
 .modal-createpost {
@@ -27,3 +42,4 @@
 .create-btn {
     margin: 1em 0 0.5em 0;
 }
+/* End of Create post modal */
