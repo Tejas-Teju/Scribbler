@@ -1,5 +1,6 @@
 /*Generalising height and margin*/
-html, body {
+html, 
+body {
     height: 100%;
     margin: 0;
 }
@@ -36,7 +37,9 @@ html, body {
     padding-top: 1em;
 }
 
-.author-btn-edit-save button, .btn-like, .btn-cmt {
+.author-btn-edit-save button, 
+.btn-like, 
+.btn-cmt {
     background-color: #fa3275;
     box-shadow: 0 5px 8px 0 #fa3275;
     color: white;
@@ -52,11 +55,14 @@ html, body {
     display: none;
 }
 
-.like button, .comment-container .btn-cmt {
+.like button, 
+.comment-container .btn-cmt {
     margin-left: 0;
 }
 
-.like-first, .liked, #comment {
+.like-first, 
+.liked, 
+#comment {
     margin-top: 1%;
     font-family: 'Inconsolata', monospace;;
     opacity: 0.6;

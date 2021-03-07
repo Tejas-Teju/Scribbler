@@ -38,7 +38,8 @@
     padding: 1.5em;
 }
 
-.modal-header, .modal-body {
+.modal-header, 
+.modal-body {
     padding: 0;
 }
 
@@ -50,7 +51,8 @@
     margin-bottom: 0;
 }
 
-.signup-form, .signin-form {
+.signup-form, 
+.signin-form {
     margin-top: 1em;;
 }
 
@@ -59,7 +61,8 @@
     opacity: 0.75;
 }
 
-.signup-btn, .signin-btn {
+.signup-btn, 
+.signin-btn {
     margin: 1em 0 0.5em 0;
     width: 100%;
 }

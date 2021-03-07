@@ -1,5 +1,6 @@
 /*Generalising height and margin*/
-html, body {
+html, 
+body {
     height: 100%;
     margin: 0;
 }
@@ -58,11 +59,13 @@ body {
     justify-content: space-between;
 }
 
-.post-heading, .post-content {
+.post-heading, 
+.post-content {
     margin: 0;
 }
 
-.post-heading-wrapper, .post-content {
+.post-heading-wrapper, 
+.post-content {
     margin-bottom: 10px;
 }
 
@@ -85,15 +88,19 @@ body {
     margin-bottom: 10px;
 }
 
-.post-heading, .fa-trash, .fa-ellipsis-h {
+.post-heading, 
+.fa-trash, 
+.fa-ellipsis-h {
     opacity: 0.4;
 }
 
-.fa-trash, .fa-ellipsis-h:hover {
+.fa-trash, 
+.fa-ellipsis-h:hover {
     cursor: pointer;
 }
 
-.fa-ellipsis-h, .fa-ellipsis-h:hover {
+.fa-ellipsis-h, 
+.fa-ellipsis-h:hover {
     color: black;
 }
 
@@ -113,7 +120,8 @@ body {
     justify-content: space-between;
 }
 
-.btn-yes, .btn-no {
+.btn-yes, 
+.btn-no {
     margin-left: 0;
     width: 5em;
 }
