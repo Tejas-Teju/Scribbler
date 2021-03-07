@@ -62,3 +62,17 @@ btnLike.addEventListener ('click', function() {
     document.getElementsByClassName('no-of-likes')[0].innerText = likes;
     document.getElementsByClassName('liked')[0].style.display = 'inherit';
 });
+
+//To display comments on clicking comment button and latest comment comes 1st
+var btnCmt = document.getElementsByClassName('btn-cmt')[0];
+btnCmt.addEventListener('click', function() {
+    var textComment = document.getElementById('comment');
+    if (textComment.value !== "") {
+        document.getElementsByClassName('comment-section')[0].style.display = 'inherit';
+        var element = document.createElement('p');
+        element.className = 'ind-comment';
+        element.innerText = textComment.value;
+        var individualComment = document.getElementsByClassName('comment-section')[0];
+        individualComment.insertBefore(element, individualComment.firstChild);
+    }
+});

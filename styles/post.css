@@ -9,6 +9,7 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 90%;
     margin: auto;
+    padding-bottom: 3%;
 }
 
 #post-title p {
@@ -35,7 +36,7 @@ html, body {
     padding-top: 1em;
 }
 
-.author-btn-edit-save button, .btn-like {
+.author-btn-edit-save button, .btn-like, .btn-cmt {
     background-color: #fa3275;
     box-shadow: 0 5px 8px 0 #fa3275;
     color: white;
@@ -51,11 +52,11 @@ html, body {
     display: none;
 }
 
-.like button {
+.like button, .comment-container .btn-cmt {
     margin-left: 0;
 }
 
-.like-first, .liked {
+.like-first, .liked, #comment {
     margin-top: 1%;
     font-family: 'Inconsolata', monospace;;
     opacity: 0.6;
@@ -63,4 +64,32 @@ html, body {
 
 .liked {
     display: none;
+}
+
+/*Comment container*/
+#comment {
+    display: block;
+    width: 70%;
+    height: 5em;
+    margin-bottom: 1%;
+}
+
+.btn-cmt {
+    margin-bottom: 2%;
+}
+
+.cmt-header {
+    font-size: 1.2em;
+}
+
+.comment-section {
+    display: none;
+    background-color: rgb(230, 228, 228);
+    width: 70%;
+    padding: 1.5em 0.5em 0.5em 0.5em;
+}
+
+.ind-comment {
+    background-color: white;
+    padding: 1.5% 1%;
 }
