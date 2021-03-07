@@ -93,17 +93,17 @@ body {
     cursor: pointer;
 }
 
-a, a:hover {
+.fa-ellipsis-h, .fa-ellipsis-h:hover {
     color: black;
 }
 
 /* Styling for Delete modal*/
-.modal-content {
+.delete-modal-content {
     width: unset;
     padding: 1.5em;
 }
 
-.modal-dialog-centered {
+.delete-modal-dialog-centered {
     justify-content: center;
 }
 
