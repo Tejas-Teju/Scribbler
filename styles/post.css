@@ -1,0 +1,66 @@
+/*Generalising height and margin*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/*Setting post container width*/
+.post-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+#post-title p {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+/*Post author, edit and save button styling*/
+.author-btn-edit-save {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.author-btn-edit-save span {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 0.3em;
+    font-stretch: expanded;
+    font-weight: 700;
+    opacity: 0.8;
+    padding-top: 1em;
+}
+
+.author-btn-edit-save button, .btn-like {
+    background-color: #fa3275;
+    box-shadow: 0 5px 8px 0 #fa3275;
+    color: white;
+}
+
+/*Styling for post content*/
+.post-content {
+    margin-top: 1.5%;
+    text-align: justify;
+}
+
+.btn-save {
+    display: none;
+}
+
+.like button {
+    margin-left: 0;
+}
+
+.like-first, .liked {
+    margin-top: 1%;
+    font-family: 'Inconsolata', monospace;;
+    opacity: 0.6;
+}
+
+.liked {
+    display: none;
+}
