@@ -75,4 +75,5 @@ btnCmt.addEventListener('click', function() {
         var individualComment = document.getElementsByClassName('comment-section')[0];
         individualComment.insertBefore(element, individualComment.firstChild);
     }
+    textComment.value = '';
 });
