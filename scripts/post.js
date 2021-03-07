@@ -16,12 +16,14 @@ fetch("../index.html")
       document.getElementsByClassName('btn-save')[0].style.display = 'initial';
 
       var postTitle = document.getElementById('post-title');
+      postTitle.innerHTML = '<p>'+'UPDATED: ' + postTitle.innerText + '</p>';
       postTitle.setAttribute('contenteditable', 'true');
       postTitle.style.border = '1px solid #fa3275';
 
-      var postTitle = document.getElementsByClassName('post-content')[0];
-      postTitle.setAttribute('contenteditable', 'true');
-      postTitle.style.border = '1px solid #fa3275';
+      var postContent = document.getElementsByClassName('post-content')[0];
+      postContent.innerHTML = '<p>'+'UPDATED: ' + '<br>' + postContent.innerText + '</p>';
+      postContent.setAttribute('contenteditable', 'true');
+      postContent.style.border = '1px solid #fa3275';
   });
 
  document.getElementsByClassName('btn-save')[0].addEventListener('click', function() {
@@ -29,10 +31,16 @@ fetch("../index.html")
     document.getElementsByClassName('btn-edit')[0].style.display = 'initial';
 
     var postTitle = document.getElementById('post-title');
+    var strSplit = postTitle.innerText.split(':');
+    var title = strSplit.splice(1, strSplit.length).join(' ');
+    postTitle.innerHTML = '<p>'+ title + '</p>';
     postTitle.setAttribute('contenteditable', 'false');
     postTitle.style.border = 'none';
 
-    var postTitle = document.getElementsByClassName('post-content')[0];
-    postTitle.setAttribute('contenteditable', 'false');
-    postTitle.style.border = 'none';
+    var postContent = document.getElementsByClassName('post-content')[0];
+    var strSplit = postContent.innerText.split(':');
+    var content = strSplit.splice(1, strSplit.length).join(' ');
+    postContent.innerHTML = '<p>'+ content + '</p>';
+    postContent.setAttribute('contenteditable', 'false');
+    postContent.style.border = 'none';
 });
