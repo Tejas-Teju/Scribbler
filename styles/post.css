@@ -12,10 +12,10 @@ html, body {
 }
 
 #post-title p {
-    border: 1px solid red;
     text-align: center;
     font-weight: bold;
-    font-size: larger;
+    font-size: x-large;
+    margin-bottom: 0;
 }
 
 /*Post author, edit and save button styling*/
@@ -23,14 +23,16 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 15px;
 }
 
 .author-btn-edit-save span {
     font-family: 'Dosis', sans-serif;
     letter-spacing: 0.3em;
     font-stretch: expanded;
-    font-weight: 600;
+    font-weight: 700;
     opacity: 0.8;
+    padding-top: 1em;
 }
 
 .author-btn-edit-save button {
@@ -43,4 +45,8 @@ html, body {
 .post-content {
     margin-top: 1.5%;
     text-align: justify;
+}
+
+.btn-save {
+    display: none;
 }
