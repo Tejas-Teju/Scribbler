@@ -35,7 +35,7 @@ html, body {
     padding-top: 1em;
 }
 
-.author-btn-edit-save button {
+.author-btn-edit-save button, .btn-like {
     background-color: #fa3275;
     box-shadow: 0 5px 8px 0 #fa3275;
     color: white;
@@ -48,5 +48,19 @@ html, body {
 }
 
 .btn-save {
+    display: none;
+}
+
+.like button {
+    margin-left: 0;
+}
+
+.like-first, .liked {
+    margin-top: 1%;
+    font-family: 'Inconsolata', monospace;;
+    opacity: 0.6;
+}
+
+.liked {
     display: none;
 }

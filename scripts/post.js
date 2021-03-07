@@ -11,6 +11,7 @@ fetch("../index.html")
         document.getElementById('header').appendChild(clone);
   });
 
+  // On clicking edit button the content is made editable and save button appears
  document.getElementsByClassName('btn-edit')[0].addEventListener('click', function() {
       document.getElementsByClassName('btn-edit')[0].style.display = 'none';
       document.getElementsByClassName('btn-save')[0].style.display = 'initial';
@@ -26,6 +27,7 @@ fetch("../index.html")
       postContent.style.border = '1px solid #fa3275';
   });
 
+  // On clicking save button the content is uneditable and edit button appears
  document.getElementsByClassName('btn-save')[0].addEventListener('click', function() {
     document.getElementsByClassName('btn-save')[0].style.display = 'none';
     document.getElementsByClassName('btn-edit')[0].style.display = 'initial';
@@ -43,4 +45,20 @@ fetch("../index.html")
     postContent.innerHTML = '<p>'+ content + '</p>';
     postContent.setAttribute('contenteditable', 'false');
     postContent.style.border = 'none';
+});
+
+// To display number of likes and change the text from Like to Liked
+var btnLike = document.getElementsByClassName('btn-like')[0]
+var likes = 0;
+
+btnLike.addEventListener ('click', function() {
+    likes++;
+    document.getElementsByClassName('btn-like-text')[0].innerText = 'Liked';
+
+    if (likes === 1) {
+        document.getElementsByClassName('like-first')[0].remove();
+    }
+    
+    document.getElementsByClassName('no-of-likes')[0].innerText = likes;
+    document.getElementsByClassName('liked')[0].style.display = 'inherit';
 });
